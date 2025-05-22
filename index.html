@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Jonathan Ojera</title>
+    <meta name="description" content="Jonathan Ojera | WDD 131 - Dynamic Web Fundamentals, Home page">
+    <meta name="author" content="Jonathan Ojera">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/home.js" defer></script>
 </head>
 <body>
-    <h1>Testing 123</h1>
+    <header>
+        <div class="top">
+            <img src="images/jonathan.jpg" alt="me">
+            <h1>Angel L. Jonathan Ojera</h1>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+        </div>
+        <nav class="navbar">
+            <ul class="navigation" id="navigation">
+                <li><a href="#" title="home">Home</a></li>
+                <li><a href="#" title="Chamber" target="blank">Chamber</a></li>
+                <li><a href="#" title="Final Project">Final</a></li> 
+                <li><a href="https://github.com/Jojera/wdd231" title="Github">Github profile</a></li>
+                <li><a href="https://www.linkedin.com" title="LinkedIn" target="blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>Home</h3>
+        <div class="grid">
+            <section class="card">
+                <h2 id="og">Course Work</h2>
+                <div class="content">
+                    <ul class="dot-lists">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </section>
+            <aside class="card">
+                <h2>Kampala, Uganda</h2>
+                <img src="images/giraffe.jpeg" alt="Uganda">
+                <p class="caption">giraffe</p>
+            </aside>
+        </div>
+        <div class="certificate-section">
+            <h2>Web and Computer Programming Certificate</h2>
+            
+            <div class="filters">
+              <button class="filter-btn">All</button>
+              <button class="filter-btn">CSE</button>
+              <button class="filter-btn">WDD</button>
+            </div>
+            
+            <div class="courses">
+            
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🥁 Angel Jonathan Ojera 🥁 Uganda</p>
+        <p id="lastModified"></p>
+    </footer>
+    <!-- <script src="getdates.js" defer></script> -->
 </body>
 </html>
