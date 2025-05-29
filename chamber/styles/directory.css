@@ -186,16 +186,18 @@ section {
 	text-align: center;
 }
 
-#members-container.grid .member-card {
-    display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 5px;
-}
-
 #members-container.list .member-card {
     display: block;
     width: 100%;
-    margin: 10px 0;
+    padding: 5px;
+
+    img {
+        display: none;
+    }
+
+    &:nth-child(odd) {
+        background-color: #bbb;
+    }
 }
 
 footer {
@@ -204,50 +206,7 @@ footer {
     gap: 10px;
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    
-
-	section {
-		& > * {
-			margin: 0.1rem;
-		}
-	}
-
-	img {
-		border: 1px solid #fff;
-		box-shadow: 0 0 1rem #555;
-        width: 200px;
-	}
-}
-
-
-.list {
-	display: flex;
-	flex-direction: column;
-
-	section {
-		display: grid;
-		grid-template-columns: 2fr 1fr 1fr;
-		margin: 0;
-		padding: 0.25rem;
-
-		& > * {
-			margin: 0 1rem;
-		}
-
-		img {
-			display: none;
-		}
-
-		&:nth-child(even) {
-			background-color: #bbb;
-		}
-	}
-}
-
 img {
 	width: auto;
 	height: 75px;
-}
+} 
