@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+        "name": "TechNova Solutions",
+        "address": "123 Innovation Blvd, Silicon Valley, CA",
+        "phone": "123-456-7890",
+        "website": "https://www.technova.com",
+        "image": "tech-nova.jpg",
+        "membership": 3,
+        "description": "Cutting-edge software development company."
+        },
+        {
+        "name": "GreenLeaf Landscaping",
+        "address": "45 Garden Lane, Austin, TX",
+        "phone": "987-654-3210",
+        "website": "https://www.greenleaf.com",
+        "image": "green-leaf.jpg",
+        "membership": 2,
+        "description": "Eco-friendly landscaping and lawn care."
+        },
+        {
+        "name": "Urban Eats Diner",
+        "address": "678 Foodie St, New York, NY",
+        "phone": "555-123-4567",
+        "website": "https://www.urbaneats.com",
+        "image": "urban-eats.jpg",
+        "membership": 1,
+        "description": "Trendy downtown eatery with local cuisine."
+        },
+        {
+        "name": "PixelPerfect Design",
+        "address": "22 Creative Ave, Seattle, WA",
+        "phone": "444-333-2222",
+        "website": "https://www.pixelperfect.com",
+        "image": "pixel-perfect.jpg",
+        "membership": 2,
+        "description": "Web and graphic design services."
+        },
+        {
+        "name": "NextGen Fitness",
+        "address": "101 Fit Blvd, Denver, CO",
+        "phone": "222-333-4444",
+        "website": "https://www.nextgenfit.com",
+        "image": "next-gen.jpg",
+        "membership": 3,
+        "description": "Modern gym with personalized training."
+        },
+        {
+        "name": "BrightPath Tutoring",
+        "address": "11 Learn Ln, Boston, MA",
+        "phone": "999-888-7777",
+        "website": "https://www.brightpathtutors.com",
+        "image": "bright-path.jpg",
+        "membership": 1,
+        "description": "Tutoring services for K-12 and college students."
+        },
+        {
+        "name": "SafeHome Security",
+        "address": "333 Secure Rd, Miami, FL",
+        "phone": "666-777-8888",
+        "website": "https://www.safehome.com",
+        "image": "safe-home.jpg",
+        "membership": 2,
+        "description": "Home security and surveillance systems."
+        }
+    ]
+}
