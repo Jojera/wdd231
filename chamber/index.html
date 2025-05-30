@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>United Kingdom Chamber Of Commerce</title>
-    <meta name="description" content="Jonathan Ojera | WDD 231 - Chamber of Commerce, Directory page">
+    <meta name="description" content="Jonathan Ojera | WDD 231 - Chamber of Commerce, Home page">
     <meta name="author" content="Jonathan Ojera">
     <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:description" content="Manifest the world of business">
@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </head>
 <body>
     <header>
@@ -41,19 +43,24 @@
     <main>
         <div class="hero">
             <picture>
-                <source srcset="images/uk-image.webp" media="(min-width: 768px)">
-                <source srcset="images/uk-image2.webp" media="(min-width: 480px)">
+                <source srcset="images/uk-image2.webp" media="(min-width: 768px)">
+                <source srcset="images/uk-image.webp" media="(min-width: 480px)">
                 <img src="images/uk-image2.webp" alt="Hero image of the place">
             </picture>
         </div>
-        <button class="ticket">Keynote Tickets</button>
+        <div class="cta">
+            <h3>Ready To Grow Your Business?</h3>
+            <p>Join our Chamber of Commerce today and connect with others!</p>
+            <a href="https://jojera.github.io/wdd231/chamber/join.html" class="cta-button">Join Now</a>
+        </div>
 
         <section>
-            <h2>Directory</h2>
+            <h2>Home</h2>
 
             <div class="content">
                 <div class="events">
                     <h2>Events</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit nobis nostrum ratione, quae voluptatibus eius numquam aperiam reiciendis, doloribus tenetur porro ea eum, cumque vero reprehenderit iste deleniti consequuntur id!</p>
                 </div>   
 
                 <div class="data">
@@ -62,34 +69,22 @@
                         <div>
                             <img src="images/weather-icon.jpg" width="70" alt="weather icon" class="weather-icon">
                         </div>
-                        <div>
-                            <p><strong>75°F</strong></p>
-                            <p>Partly Cloudy</p>
-                            <p>High: 85°</p>
-                            <p>Low: 25°</p>
-                            <p>Humidity: 34%</p>
-                            <p>Sunrise: 7:30am</p>
-                            <p>Sunset: 9:55pm</p>
+                        <div class="current-weather">
+                            <p>Temperature: <span id="current-temp"></span></p>
+                            <p>Description: <span id="weather-desc"></span></p>                                  
                         </div>
                     </div>    
                 </div>
 
                 <div class="weather">
-                    <h2>Weather Forecast</h2> 
-                    <p>Today: <strong>90°F</strong></p>
-                    <p>Wednesday: <strong>89°F</strong></p>
-                    <p>Thursday: <strong>68°F</strong></p>
+                    <h2>Weather Forecast</h2>   
+                    <div id="forecast" class="forecast"></div>                  
                 </div>
             </div>
-            <div>
-                <div class="menu">
-                    <button id="grid">⏹️ Grid</button>
-                    <button id="list">📄 List</button>
-                </div>        
+            </section>
+            <h2 class="spot">Member Spotlights</h2>
+            <div id="spotlights" class="spotlight-container">
             </div>
-        </section>
-        <div id="members-container">
-        </div>
     </main>
     <footer>
         <div>

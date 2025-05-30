@@ -1,3 +1,4 @@
+/* Directory css */
 :root {
     --primary-color:  #005488;
 }
@@ -91,6 +92,7 @@ nav a:hover {
 
 .hamburger.active {
     content: "✖"; /* Change to 'X' when menu is active */
+    z-index: 4;
 }
 
 @media screen and (min-width: 800px) {
@@ -125,6 +127,13 @@ nav a:hover {
     }
 
     #members-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));   
+        gap: 30px;
+        justify-items: center;
+    }
+
+    .spotlight-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));   
         gap: 30px;
@@ -210,3 +219,52 @@ img {
 	width: auto;
 	height: 75px;
 } 
+
+
+
+
+
+/* Home CSS */
+.action {
+    position: absolute;
+    top: 130%;
+    left: 80%;
+    padding: 30px;
+    border-radius: 1rem;
+    cursor: pointer; 
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+.cta {
+    position: absolute;
+    border: 2px solid rgba(0 0 0 / .2);
+    top: 100%;
+    background-color: gray;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 10px;
+    left: 33%;
+    object-fit: cover;
+    opacity: 0.9;
+
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #005fa3;
+}
+
+.spot {
+    text-align: center;
+}
