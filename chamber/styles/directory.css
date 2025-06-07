@@ -6,6 +6,7 @@
 
 body {
     font-family: "Roboto", serif;
+    /* max-width: fit-content; */
 }
 
 .logo {
@@ -44,7 +45,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 15px 20px;
+    /* padding: 15px 20px; */
 }
 
 nav a:hover {
@@ -54,7 +55,7 @@ nav a:hover {
 }
 
 /* Hamburger Button */
-.hamburger {
+#hamburger {
     font-size: 30px;
     cursor: pointer;
     display: block;  /* Visible on small screens */
@@ -66,11 +67,11 @@ nav a:hover {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 0;
+    right: 0px;
     background: var(--primary-color);
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 0px;
     z-index: 3;
 }
 
@@ -79,7 +80,7 @@ nav a:hover {
 }
 
 .nav-links li {
-    padding: 10px 0;
+    padding: 10px 0px;
 }
 
 .nav-links a {
@@ -90,14 +91,14 @@ nav a:hover {
     display: block;
 }
 
-.hamburger.active {
+#hamburger.active {
     content: "✖"; /* Change to 'X' when menu is active */
     z-index: 4;
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 800px) {
     /* Remove Hamburger on Large Screens */
-    .hamburger {
+    #hamburger {
          display: none; /* Hide hamburger */
      }
  
@@ -109,7 +110,7 @@ nav a:hover {
          position: static;
          background: none;
          width: auto;
-         padding: 0;
+         padding: 0px;
      }
  
      .nav-links li {
@@ -145,22 +146,20 @@ nav a:hover {
         grid-template-columns: 1fr 1fr 1fr;
         padding-left: 4rem;
         padding-top: 20px;
-    }
-    
+    }        
 }
 
 .hero img {
-    width: 95%;
+    width: 100%;
     height: 800px;
     object-fit: cover;
     position: relative;
-    margin-left: 2rem;
 }
 
 .ticket {
     position: absolute;
-    top: 130%;
-    left: 80%;
+    top: 120%;
+    left: 45%;
     padding: 20px;
     border-radius: 1rem;
     opacity: 0.7;
@@ -186,7 +185,7 @@ nav a:hover {
 
 section {
     width: 90%;
-    margin-left: 4rem;
+    margin-left: 2rem; 
 }
 
 .menu {
@@ -195,19 +194,21 @@ section {
 	text-align: center;
 }
 
-#members-container.list .member-card {
+#members-container.list {
     display: block;
     width: 100%;
     padding: 5px;
-
-    img {
-        display: none;
-    }
-
-    &:nth-child(odd) {
-        background-color: #bbb;
-    }
 }
+
+#members-container.list img {
+    display: none;
+}
+
+#members-container.list .member-card:nth-child(odd) {
+    background-color: #bbb;
+    padding: 5px;
+}
+
 
 footer {
     background-color: var(--primary-color);
@@ -225,7 +226,7 @@ img {
 
 
 /* Home CSS */
-.action {
+/* .action {
     position: absolute;
     top: 130%;
     left: 80%;
@@ -233,7 +234,7 @@ img {
     border-radius: 1rem;
     cursor: pointer; 
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.7);
-}
+} */
 
 .cta {
     position: absolute;
@@ -243,7 +244,7 @@ img {
     text-align: center;
     border-radius: 1rem;
     padding: 10px;
-    left: 33%;
+    left: 10%;
     object-fit: cover;
     opacity: 0.9;
 
@@ -267,4 +268,204 @@ img {
 
 .spot {
     text-align: center;
+}
+
+/* .active {
+    font-weight: bold;
+    border-bottom: 2px soild yellow;
+} */
+
+.nav-links a.active {
+    background-color: gray;
+    font-weight: bold;
+    border-bottom: 2px solid #ffff00; 
+}
+
+@media (max-width: 320px) {
+    .content {
+        display: flex;
+    }
+}
+
+/* Join CSS */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  } */
+
+
+  
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .form-layout {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.form-container {
+    flex: 2;
+    /* max-width: 500px; */
+}
+
+
+
+.cards-container {
+    flex: 1;
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+    animation: fadeInCards 1.5s ease-in;
+}
+
+.cards-container h2 {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.info-btn {
+    padding: 10px;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 0px 50px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.4s;
+    border-left: 5px solid gray;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeInCards {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); } 
+}
+
+/* Modal styles */
+
+
+ .modal-content {
+    background: white;
+    padding: 2rem;
+    margin: 10% auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+} 
+
+.close-modal {
+    float: right;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+form {
+    border: 1px solid rgb(0 0 0/ .1);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.5s;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 5px;
+    width: 100%;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit {
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.membership-modal {
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.modal-content h2, h3 {
+    color: var(--primary-color);
+}
+
+::backdrop {
+    background: rgba(0,0,0,0.8);
+  }
+
+.application-summary {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.thanks {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.summary-data {
+    border: 1px solid #bbb;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    margin: 1rem;
+    border-radius: 5px;
+    border-left: 3px solid gray;
+}
+
+.home-btn {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    padding: 8px;
+    margin: 10rem;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: white;
 }

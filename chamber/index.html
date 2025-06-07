@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>United Kingdom Chamber Of Commerce</title>
+    <title>United Kingdom Chamber Of Commerce | Home</title>
     <meta name="description" content="Jonathan Ojera | WDD 231 - Chamber of Commerce, Home page">
     <meta name="author" content="Jonathan Ojera">
     <meta property="og:title" content="Chamber of Commerce">
@@ -31,27 +31,27 @@
         </div>
         <nav class="navbar">
             <ul class="nav-links" id="nav-links">
-                <li><a href="https://jojera.github.io/wdd231/chamber/index.html">Home</a></li>
-                <li><a href="https://jojera.github.io/wdd231/chamber/directory.html">Directory</a></li>
-                <li><a href="https://jojera.github.io/wdd231/chamber/join.html">Join</a></li>
-                <li><a href="https://jojera.github.io/wdd231/chamber/discover.html">Discover</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
             </ul>
             <div class="circle">◑</div>
-            <div class="hamburger" id="hamburger">&#9776;</div>
+            <div id="hamburger">&#9776;</div>
         </nav>
     </header>
     <main>
         <div class="hero">
             <picture>
                 <source srcset="images/uk-image2.webp" media="(min-width: 768px)">
-                <source srcset="images/uk-image.webp" media="(min-width: 480px)">
+                <source srcset="images/uk-image.webp" media="(max-width: 480px)">
                 <img src="images/uk-image2.webp" alt="Hero image of the place">
             </picture>
         </div>
         <div class="cta">
             <h3>Ready To Grow Your Business?</h3>
             <p>Join our Chamber of Commerce today and connect with others!</p>
-            <a href="https://jojera.github.io/wdd231/chamber/join.html" class="cta-button">Join Now</a>
+            <a href="join.html" class="cta-button">Join Now</a>
         </div>
 
         <section>
@@ -81,10 +81,10 @@
                     <div id="forecast" class="forecast"></div>                  
                 </div>
             </div>
-            </section>
-            <h2 class="spot">Member Spotlights</h2>
-            <div id="spotlights" class="spotlight-container">
-            </div>
+        </section>
+        <h2 class="spot">Member Spotlights</h2>
+        <div id="spotlights" class="spotlight-container">
+        </div>
     </main>
     <footer>
         <div>
