@@ -1,0 +1,52 @@
+{
+    "areas": [
+        {
+            "name" : "London eye",
+            "address" : "London, United Kingdom",
+            "description" : "Tour the impressive Edinburgh Castle which looms high over the city.",
+            "image" : "images/london-eye.webp"
+        },
+        {
+            "name" : "Ashmolean Museum",
+            "address" : "Oxford, United Kingdom",
+            "description" : "Aims to present the story of the human race over thousands of years.",
+            "image" : "images/ashmolean-museum.webp"
+        },
+        {
+            "name" : "Buckingham Palace",
+            "address" : "London, United Kingdom",
+            "description" : "The palace has been at the center of Royal Life in London since 1837.",
+            "image" : "images/buckingham-palace.webp"
+        },
+        {
+            "name" : "Tower Bridge",
+            "address" : "London, United Kingdom",
+            "description" : "Tower Bridge is the grandest and most distinctive of the Thames River crossings.",
+            "image" : "images/tower-bridge.webp"
+        },
+        {
+            "name" : "Oxford's Museum of Natural History",
+            "address" : "Oxford, United Kingdom",
+            "description" : "Founded in 1860 as a place to showcase all the scientific study conducted at Oxford University.",
+            "image" : "images/museum-of-natural-history.webp"
+        },
+        {
+            "name" : "Oxford Botanic Garden",
+            "address" : "Oxford, United Kingdom",
+            "description" : "over 400 years old, the oldest botanic garden in the entire United Kingdom, and houses over 5,000 different plant species.",
+            "image" : "images/botanic-garden.webp"
+        },
+        {
+            "name" : "The Shard",
+            "address" : "London, United Kingdom",
+            "description" : "The Shard towers more than 80 stories over the city.",
+            "image" : "images/the-shard.webp"
+        },
+        {
+            "name" : "The Bodleian Library",
+            "address" : "Oxford, United Kingdom",
+            "description" : "One the oldest libraries in all of Europe and the second biggest in the Uk.",
+            "image" : "images/bodleian-library.webp"
+        }
+    ]
+}

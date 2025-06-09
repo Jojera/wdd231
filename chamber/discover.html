@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Kingdom Chamber Of Commerce | Home</title>
+    <meta name="description" content="Jonathan Ojera | WDD 231 - Chamber of Commerce, Home page">
+    <meta name="author" content="Jonathan Ojera">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:description" content="Manifest the world of business">
+    <meta property="og:image" content="https://jojera.github.io/wdd231/chamber/images/logo.jpg">
+    <meta property="og:url" content="https://jojera.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="images/logo.jpg" alt="logo">
+            <div>
+                <h2>United Kingdom</h2>
+                <p>Chamber of commerce</p>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+            </ul>
+            <div class="circle">◑</div>
+            <div id="hamburger">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="heading-wrapper">
+            <h1 class="discover">Discover Our<br>Chamber of Commerce</h1>
+        </div>
+        <div id="gallery">
+            <!-- items to be dynamically added here -->
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p><strong>United Kingdom Chamber of Commerce</strong></p>
+            <p>24 Type innit</p>
+            <p>UK mail, 2244</p>
+            <p>info@ukcc.org</p>
+            <p>(224) 123-4567</p>
+        </div>
+        <div>
+            <img src="images/youtube.png" alt="youtube logo" width="60"> 
+            <img src="images/twitter.png" alt="twitter logo" width="60">
+            <img src="images/linkedin.png" alt="linkedIn logo" width="60">
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Jonathan Ojera</p>
+            <p>©<span id="currentyear"></span> UK Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/discover.js" type="module"></script>
+</body>
+</html>
