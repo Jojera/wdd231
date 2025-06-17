@@ -44,7 +44,7 @@ header {
     align-items: center;
     padding: 20px 20px;
     background-color: var(--primary-color);
-    background-image: linear-gradient(to right, #0047ab, #0080ab);
+    background-image: linear-gradient(to right, #0047ab, #0060ab);
     color: white;
     position: relative;
     border-radius: 8px 8px 0 0;
@@ -117,7 +117,7 @@ nav {
 }
 
 .wallpaper {
-    background: linear-gradient(to right, black, #201f1f);
+    background: linear-gradient(to right, black, #333232);
     border-radius: 0 0 8px 8px;
 }
 
