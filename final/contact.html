@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BeatCraft</title>
+    <meta name="description" content="Jonathan Ojera | WDD 231 - Final Project, Contact Us page">
+    <meta name="author" content="Jonathan Ojera">
+    <meta property="og:title" content="BeatCraft">
+    <meta property="og:description" content="Experience a whole new world of time keeping">
+    <meta property="og:image" content="https://jojera.github.io/wdd231/final/images/main-drummer.jpg">
+    <meta property="og:url" content="https://jojera.github.io/wdd231/final/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/project.css">
+</head>
+<body>
+    <header>
+        <div class="logo-division">
+            <img src="images/beatcraft-logo.jpg" alt="logo" class="logo">
+            <p><strong>BeatCraft</strong></p>
+        </div>
+        <div id="hamburger">&#9776;</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="get-started.html">Get Started</a></li>
+                <li><a href="contact.html" class="active-link"><span class="active-page">Contact Us</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content-container">
+            <div class="form-back">
+            <div class="contact-heading">
+                <h1>Reach Out Today</h1>
+                <p>Send us a note, <strong>let's connect!</strong></p>
+            </div>
+            
+            <div class="form-container">
+                <form method="get" action="thank-you.html" id="contact-form">
+                    <div class="form-group">
+                        <label for="name"> * Name</label>
+                        <input type="text" id="name" title="Your Name" name="name" required>
+                        
+                        <label for="phone"> * Phone Number</label>
+                        <input type="tel" id="phone" name="phone" title="Phone Number" required>
+
+                        <label for="email"> * Email Address</label>
+                        <input type="email" id="email" name="email" title="Your email" required>
+
+                        <fieldset class="membership">
+                            <legend>Do you have a membership with us?</legend>
+                            <label><input type="radio" name="membership" value="Yes" required> Yes</label>
+                            <label><input type="radio" name="membership" value="No"> No</label>
+                        </fieldset>
+
+                        <label for="help">What should we help you with?</label>
+                        <select id="help" name="help" required>
+                            <option value="">Please select what's closest to your request...</option>
+                            <option value="Support">Support</option>
+                            <option value="Page glitches">Page glitches</option>
+                            <option value="Learning Drums">Learning Drums</option>
+                            <option value="Purchasing Drums">Purchasing Drums</option>
+                        </select>
+
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="5" placeholder="Add a message here..."></textarea> 
+                        
+                        <input type="hidden" id="timestamp" name="timestamp">
+                        <!-- <input type="submit" class="submit" value="Apply Now"> -->
+                        <button type="submit">Submit</button>
+                    </div>    
+                </form>
+            </div>
+            </div>
+
+            <div class="faqs">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faqs-container">
+                    <div class="faq-cards" id="schedule">
+                        <img src="images/education.png" alt="Lessons">
+                        <h3>Lesson schedules</h3>
+                        <p>What are your specific daily lesson schedules?</p>
+                        <button class="info-btn" data-modal="schedule-modal">Click here</button>
+                    </div>
+
+                    <div class="faq-cards" id="membership">
+                        <img src="images/badge.png" alt="Membership">
+                        <h3>Membership Options</h3>
+                        <p>What different types of memberships are available?</p>
+                        <button class="info-btn" data-modal="membership-modal">Click here</button>
+                    </div>
+
+                    <div class="faq-cards" id="fp">
+                        <img src="images/price-tag.png" alt="Free and Paid">
+                        <h3>Free and Paid</h3>
+                        <p>What's the difference between free and paid membership?</p>
+                        <button class="info-btn" data-modal="fp-modal">Click here</button>
+                    </div>
+
+                    <div class="faq-cards" id="guarantee">
+                        <img src="images/guarantee.png" alt="Guarantee">
+                        <h3>90-day guarantee</h3>
+                        <p>What are the terms for your immediate refund?</p>
+                        <button class="info-btn" data-modal="guarantee-modal">Click here</button>
+                    </div>
+
+                    <div class="faq-cards" id="team">
+                        <img src="images/group-chat.png" alt="Team">
+                        <h3>Team Collaboration</h3>
+                        <p>What activities do your teams do to achieve success?</p>
+                        <button class="info-btn" data-modal="team-modal">Click here</button>
+                    </div>
+
+                    <div class="faq-cards" id="price">
+                        <img src="images/cart.png" alt="Purchase">
+                        <h3>Purchase Price</h3>
+                        <p>What are the prices of your different instruments?</p>
+                        <button class="info-btn" data-modal="price-modal">Click here</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="urgent">
+                <h2>More urgent requests? Ask away!</h2>
+                <div class="urgent-container">
+                    <div class="urgent-cards">
+                        <div>
+                            <img src="images/phone-call.png" alt="phone call">
+                        </div>
+                        <p><span><strong>Toll free:</strong></span><br>1-800-200-2244</p>
+                    </div>
+
+                    <div class="urgent-cards">
+                        <div>
+                            <img src="images/expand.png" alt="International">
+                        </div>
+                        <p><span><strong>International:</strong></span><br>1-200-400-2244</p>
+                    </div>
+
+                    <div class="urgent-cards">
+                        <div>
+                            <img src="images/clock.png" alt="Clock">
+                        </div>
+                        <p><span><strong>Office hours:</strong></span><br>Monday - Friday, 7AM - 9PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-content1">
+                <h3><strong>Created by: <span class="my-name">Jonathan Ojera</span></strong></h3>
+                <p>Copyright <span id="current-year"></span></p>
+                <h3><strong>About</strong></h3>
+                <p>We showcase the power of rhythm as a tool for expression and connection,
+                catering for a wide audience of drummers and those who would like to join us
+                in this fascinating journey. We also focus on designing multimedia integration, and
+                a passion for music. Your support is highly appreciated!
+                </p>
+            </div>
+            <br>
+            <div class="footer-content2">
+            <h3><strong>Contact Info</strong></h3>
+                <p>Address: 2244 Spread love, Oj-poe Street</p>
+                <p>Email: beatcraft24@gmail.com</p>
+                <p>Tel: 1-800-200-2244 / 1-200-400-2244</p>
+            </div>
+            <br>
+            <div class="footer-content3">
+                <h3><strong>Related Sites</strong></h3>
+                <p><a href="https://www.drumeo.com/" target="_blank">Drumeo</a></p>
+                <p><a href="https://www.musora.com/" target="_blank">Musora</a></p>
+                <p><a href="https://www.pianote.com/" target="_blank">Pianote</a></p>
+                <p><a href="https://www.guitareo.com/" target="_blank">Guitareo</a></p>
+                <p><a href="https://www.singeo.com/" target="_blank">Singeo</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <dialog id="schedule-modal" class="faqs-modal">
+        <div>
+            <h2>Lesson Schedules</h2>
+            <ul>
+                <li>Morning hours, 7am - 10am</li>
+                <li>Afternoon hours, 12am - 3pm</li>
+                <li>Evening hours, 6pm - 9pm</li>
+            </ul>
+            <p><span class="modal-note"><strong>Note: </strong></span> We offer both private and group lessons</p>
+            <button class="close-modal">Close</button>
+        </div>
+    </dialog>
+
+    <dialog id="membership-modal" class="faqs-modal">
+        <div>
+            <h2>Membership Options</h2>
+            <ul>
+                <li>Non-profit Membership</li>
+                <li>Bronze Membership</li>
+                <li>Silver Membership</li>
+                <li>Gold Membership</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </div>
+    </dialog>
+
+    <dialog id="fp-modal" class="faqs-modal">
+        <div>
+            <h2>Free and Paid</h2>
+            <ul>
+                <li>Free membership is accessed by anyone without any payment but with restricted resources and ads</li>
+                <li>Paid membership is includes a high priveledge of accessing unlimited resoueces with zero ads</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </div>
+    </dialog>
+
+    <dialog id="guarantee-modal" class="faqs-modal">
+        <div>
+            <h2>90-day guarantee</h2>
+            <h3>We only refund if;</h3>
+            <ul>
+                <li>a user wants to withdraw their membership</li>
+                <li>someone with paid membership hasn't been attended to</li>
+                <li>the purchased instruments is not electrically damaged</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </div>
+    </dialog>
+
+    <dialog id="team-modal" class="faqs-modal">
+        <div>
+            <h2>Team Collaboration</h2>
+            <ul>
+                <li>Our Coding team make the websites</li>
+                <li>The teachers offer services to members</li>
+                <li>Our Web designers offer fascinating aesthetics</li>
+                <li>Our database team ensures proper storage of data</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </div>
+    </dialog>
+
+    <dialog id="price-modal" class="faqs-modal">
+        <div>
+            <h2>Purchase Price</h2>
+            <ul>
+                <li>Whole Drum-kit - $1000</li>
+                <li>Snare drum - $210</li>
+                <li>Meinl Cymbals - $400</li>
+                <li>Drum Sticks - $70</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </div>
+    </dialog>
+    <script src="scripts/contact.js" defer></script>
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/get.js" type="module"></script>
+</body>
+</html>

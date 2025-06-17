@@ -1,0 +1,21 @@
+{
+    "drums": [
+        {
+            "name": "Snare drum",
+            "description": "This is one of the most versatile and essential percussion instruments. it provides the backbeat, typically played on 2 and 4 in various genres.",
+            "image": "images/snare-drum.jpg"
+        },
+
+        {
+            "name": "Cymbals",
+            "description": "They are used for dramatic accents and crescendos, they normally indicate closure of a loop. There are various types which include rides, splashes, crushes...",
+            "image": "images/cymbal.jpg"
+        },
+
+        { 
+            "name": "Drum Sticks",
+            "description": "They are used to strike drums and cymbals to produce sound. They come in various shapes, sizes, and materials, each affecting the tone and feel of the drumming experience.",
+            "image": "images/sticks.jpg"
+        }
+    ]
+}

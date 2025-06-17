@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+  <header></header>
+
+  <main>
+    <h1 class="thanks">Thank You for Joining!</h1>
+    <div class="application-summary">
+        <h2>Application Summary</h2>
+        <div class="summary-data">
+            <p><strong>Name:</strong> <span id="display-name"></span></p>
+            <p><strong>Phone:</strong> <span id="display-phone"></span></p>
+            <p><strong>Email:</strong> <span id="display-email"></span></p>
+            <p><strong>Membership:</strong> <span id="display-membership"></span></p>
+            <p><strong>Help:</strong> <span id="display-help"></span></p>
+            <p><strong>Description:</strong> <span id="display-description"></span></p>
+            <p><strong>Date Submitted:</strong> <span id="display-timestamp"></span></p>
+        </div>
+        <a href="index.html" class="home-btn">Return to Homepage</a>
+    </div>
+  </main>
+
+  <footer></footer>
+
+  <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Display form data from localStorage
+            document.getElementById("display-name").textContent = localStorage.getItem("name") || "";
+            document.getElementById("display-phone").textContent = localStorage.getItem("phone") || "";
+            document.getElementById("display-email").textContent = localStorage.getItem("email") || "";
+            document.getElementById("display-membership").textContent = localStorage.getItem("membership") || "";
+            document.getElementById("display-help").textContent = localStorage.getItem("help") || "";
+            document.getElementById("display-description").textContent = localStorage.getItem("description") || "";
+            
+            // Format timestamp for display
+            const timestamp = localStorage.getItem("timestamp") || "";
+            if (timestamp) {
+                const date = new Date(timestamp);
+                document.getElementById("display-timestamp").textContent = date.toLocaleString();
+            }
+        });
+    </script>
+</body>
+</html>

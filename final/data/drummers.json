@@ -1,0 +1,87 @@
+{
+    "drummers" : [
+        {
+            "name": "Matt Mcquire",
+            "description": "Possesses the right art for song structures and flow",
+            "image": "images/matt-mcguire.webp",
+            "speciality": "Song Breakdown"
+        },
+ 
+        {
+            "name": "Aric Improta",
+            "description": "Creativity is his biggest flex, he's unmatched",
+            "image": "images/aric-improta.webp",
+            "speciality": "The Creative Mindset"
+        },
+
+        {
+            "name": "Ash Pearson",
+            "description": "His drumming style is characterized by precision, speed, and technical complexity, making him a standout in the genre.",
+            "image": "images/ash-pearson.webp",
+            "speciality": "Blast beats"
+        },
+
+        {
+            "name": "Billy Cobham",
+            "description": "A legendary jazz fusion drummer known for his explosive technique and pioneering work in the genre.",
+            "image": "images/billy-cobham.webp",
+            "speciality": "Internal Schronization"
+        },
+
+        {
+            "name": "Dennis Chambers",
+            "description": "A renowned American jazz fusion and funk drummer, celebrated for his speed, precision, and groove.",
+            "image": "images/dennis-chambers.webp",
+            "speciality": "Funk Drumming"
+        },
+
+        {
+            "name": "Dorothea Taylor",
+            "description": "The Godmother of Drumming, celebrated for her incredible skills and dedication to the craft",
+            "image": "images/dorothea-taylor.webp",
+            "speciality": "Rudiments & Patterns"
+        },
+
+        {
+            "name": "Gene Hoglan",
+            "description": "Also known as The Atomic Clock, He is a legendary metal drummer celebrated for his precision, speed, and technical mastery",
+            "image": "images/gene-hoglan.webp",
+            "speciality": "Metal Grooves"
+        },
+
+        {
+            "name": "John Wooton",
+            "description": "A renowned percussionist, educator, and author, specializing in rudimental drumming and steel pan percussion.",
+            "image": "images/john-wooton.webp",
+            "speciality": "Better Doubles"
+        },
+
+        {
+            "name": "Sarah Thawer",
+            "description": "A Canadian drummer known for her versatility across genres, including jazz, fusion, rock, hip-hop, and Indian/world music.",
+            "image": "images/sarah-thawer.webp",
+            "speciality": "4 Way Coordination"
+        },
+
+        {
+            "name": "Steve Smith",
+            "description": "A legendary American drummer known for his work in rock, jazz, and fusion.",
+            "image": "images/steve-smith.webp",
+            "speciality": "The Art of Drum Soloing"
+        },
+
+        {
+            "name": "Taylor Gordon",
+            "description": "Also known as The Pocket Queen, She is an American drummer and producer known for her groove-heavy playing and creative approach to rhythm.",
+            "image": "images/taylor-gordon.webp",
+            "speciality": "Building Grooves"
+        },
+
+        {
+            "name": "Tommy Igoe",
+            "description": "A world-class drummer, educator, and author, known for his contributions to drumming technique and performance.",
+            "image": "images/tommy-igoe.webp",
+            "speciality": "The Secrets of Groove Essentials"
+        }
+    ]
+}

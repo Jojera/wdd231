@@ -38,7 +38,7 @@ async function getMembers() {
       card.classList.add('member-card');
   
       card.innerHTML = `
-        <h2>${member.name}</h2>
+        <h2>${member.name}</h2>  
         <img src="images/${member.image}" alt="Logo of ${member.name}">
         <p><strong>Address:</strong> ${member.address}</p>
         <p><strong>Phone:</strong> ${member.phone}</p>
