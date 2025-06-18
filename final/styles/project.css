@@ -343,7 +343,7 @@ small {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-.grooving-btn {
+.text-content a {
     margin-top: 2rem;
     padding: 15px 15px;
     border: 4px solid #0047ab;
@@ -356,7 +356,7 @@ small {
     text-decoration: none;
 }
 
-.grooving-btn:hover {
+.text-content a:hover {
     transform: scale(1.05);
 }
 
@@ -372,23 +372,27 @@ small {
     }
 }
 
-.get-started-heading {
+#get-started-heading {
     text-align: center;
 }
 
-.get-started-heading h2 {
+#get-started-heading h2 {
     font-size: 2.5rem;
 }
 
-.get-started-heading p {
+#get-started-heading h2 span {
+    color: #0041a8;
+}
+
+#get-started-heading p {
     font-size: 2rem;
 }
 
-.get-started-heading p span {
+#get-started-heading p span {
     font-weight: bolder;
 }
 
-.spinning-drum {
+#spinning-drum {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,7 +400,7 @@ small {
     margin: 0;
 }
 
-.spinning-drum img {
+#spinning-drum img {
     max-width: 200px;
     width: 100%;
     height: auto;
