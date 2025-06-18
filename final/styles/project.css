@@ -452,16 +452,16 @@ small {
 
 
 /* Contact Us Styles */
-.contact-heading {
-    text-align: center;
-}
-
-.contact-heading h1 {
+.form-back h1 {
     font-size: 2.5rem;
 }
 
-.contact-heading p {
+.form-back p {
     font-size: 1.2rem;
+}
+
+.form-back h1, p {
+    text-align: center;
 }
 
 .form-back {
@@ -503,13 +503,13 @@ textarea {
     box-sizing: border-box;
 }
   
-fieldset.membership {
+fieldset {
     margin-top: 15px;
     border: none;
     padding: 0;
 }
   
-fieldset.membership label {
+fieldset label {
     margin-right: 20px;
 }
   
@@ -575,7 +575,7 @@ form button:hover {
     filter: invert(100%);
 }
 
-.info-btn {
+.faq-cards button {
     padding: 10px;
     border-radius: 8px;
     background-color: #02011b;
@@ -586,7 +586,7 @@ form button:hover {
     font-size: medium;
 }
 
-.info-btn:hover {
+.faq-cards button:hover {
     transform: scale(1.05);
 }
 
