@@ -10,18 +10,18 @@ body {
     font-weight: 300;
 }
 
-.logo-division img {
+#logo-division img {
     width: 70px;
     height: auto;
     border-radius: 5px;
 }
 
-.logo-division {
+#logo-division {
     display: flex;
     gap: 10px;
 }
 
-.logo-division p {
+#logo-division p {
     font-size: x-large;
     font-weight: bolder;
 }
@@ -111,7 +111,7 @@ nav {
     }
 }
 /*  */
-.content-container {
+#content-container {
     max-width: 85%;
     margin: auto;
 }
@@ -257,7 +257,7 @@ footer {
 
 /* Desktop view */
 @media (min-width: 768px) {  
-    .notes {
+    #notes {
         display: flex;
         justify-content: center;
         gap: 10px;
@@ -452,19 +452,19 @@ small {
 
 
 /* Contact Us Styles */
-.form-back h1 {
+#form-back h1 {
     font-size: 2.5rem;
 }
 
-.form-back p {
+#form-back p {
     font-size: 1.2rem;
 }
 
-.form-back h1, .form-back p {
+#form-back h1, #form-back p {
     text-align: center;
 }
 
-.form-back {
+#form-back {
     background-color: #f3f2f2;
     width: 95%;
     margin: 1rem auto;
@@ -472,7 +472,7 @@ small {
     border-radius: 10px;
 }
 
-.form-container {
+#form-container {
     max-width: 600px;
     margin: auto;
     background-color: #ffffff;
