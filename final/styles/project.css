@@ -575,7 +575,7 @@ form button:hover {
     filter: invert(100%);
 }
 
-.faq-cards button {
+.info-btn {
     padding: 10px;
     border-radius: 8px;
     background-color: #02011b;
@@ -586,7 +586,7 @@ form button:hover {
     font-size: medium;
 }
 
-.faq-cards button:hover {
+.info-btn:hover {
     transform: scale(1.05);
 }
 
